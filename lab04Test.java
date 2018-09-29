@@ -18,11 +18,17 @@ public class lab04Test {
     @Test
     public void minArray() {
         lab04 min = new lab04();
-        assertEquals(1, min.minArray());
-        assertEquals(2, min.minArray());
-        assertEquals(3, min.minArray());
-        assertEquals(4, min.minArray());
-        assertEquals(5, min.minArray());
+        //int[] arr = new int[3];
+        int[] arr1 = {1, 2, 3};
+        assertEquals(1, min.minArray(arr1));
+        int[] arr2={2,4,3};
+        assertEquals(2, min.minArray(arr2));
+        int[] arr3={7,2,5};
+        assertEquals(2, min.minArray(arr3));
+        int[] arr4={0,6,3};
+        assertEquals(0, min.minArray(arr4));
+        int[] arr5={5,2,3};
+        assertEquals(2, min.minArray(arr5));
 
     }
 
