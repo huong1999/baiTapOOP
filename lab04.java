@@ -10,9 +10,9 @@ public class lab04 {
             return b;
     }
 
-    public static int minArray() {
+    public static int minArray(int[] arr) {
         int i;
-        int[] arr ={1,2,3};
+
         int min = arr[0];
 
         for (i = 1; i < 3; i++) {
@@ -45,11 +45,11 @@ public class lab04 {
     public static void main(String[] args) {
 
         int a=0, b=2, weight=48;
-        int[] arr = new int[3];
+        int[] arr = {1,2,3};
         double height= 1.58;
         //int[] arr = {1,2,3};
         System.out.println("Gia tri lon nhat la : " + max(a, b) + "\n----------------------");
-        System.out.println("Gia tri nho nhat cua mang la : " + minArray() + "\n----------------------");
+        System.out.println("Gia tri nho nhat cua mang la : " + minArray(arr) + "\n----------------------");
         System.out.println("Ket qua BMI : " + BMI(weight,height));
 
 
